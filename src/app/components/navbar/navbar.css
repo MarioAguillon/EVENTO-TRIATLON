@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: var(--oscuro);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--principal); }
+
+.nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
+.nav-links a { 
+  color: white; 
+  text-decoration: none; 
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.nav-links a:hover { color: var(--principal); }
+
+.btn-nav {
+  background: var(--principal);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}

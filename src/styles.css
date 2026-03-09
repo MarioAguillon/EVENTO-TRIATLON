@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importar una fuente deportiva */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+:root {
+  --principal: #ff5722; /* Naranja deportivo */
+  --oscuro: #1a1a1a;    /* Negro casi total */
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  scroll-behavior: smooth; /* Para que al dar clic al menú baje suavecito */
+}
+
+.parallax-bg-1 {
+  background-image: url('http://marioaguillon.github.io/EVENTO-TRIATLON/img/bg-agenda.jpg');
+}
+
+.parallax-bg-1 {
+  background-image: url('http://marioaguillon.github.io/EVENTO-TRIATLON/img/hero-bg.jpg');
+}

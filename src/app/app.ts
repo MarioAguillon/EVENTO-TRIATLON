@@ -1,12 +1,26 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+// IMPORTANTE: Rutas exactas a tus carpetas y nombres de archivos
+import { NavbarComponent } from './components/navbar/navbar';
+import { HeroComponent } from './components/hero/hero';
+import { Info } from './components/info/info';
+import { Agenda } from './components/agenda/agenda';
+import { Registro } from './components/registro/registro';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [ 
+    NavbarComponent, 
+    HeroComponent, 
+    Info, 
+    Agenda, 
+    Registro
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('evento-triatlon');
+export class AppComponent {
+  title = 'evento-triatlon';
 }
