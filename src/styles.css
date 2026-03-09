@@ -15,10 +15,14 @@ body {
   scroll-behavior: smooth; /* Para que al dar clic al menú baje suavecito */
 }
 
+/* Sube niveles hasta la raíz para encontrar la carpeta public/img */
 .parallax-bg-1 {
-  background-image: url('http://marioaguillon.github.io/EVENTO-TRIATLON/img/bg-agenda.jpg');
+  /* El ./ es el truco mágico para el Application Builder */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('/img/bg-agenda.jpg');
 }
 
-.parallax-bg-1 {
-  background-image: url('http://marioaguillon.github.io/EVENTO-TRIATLON/img/hero-bg.jpg');
+.hero-section {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('/img/hero-bg.jpg');
 }
